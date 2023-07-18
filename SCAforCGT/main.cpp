@@ -952,7 +952,7 @@ int main(int argc, char** argv)
 	MyClass my;
 	const char* InputName, * OutputName;
 	string strFileName;
-	ifstream getParaData("D:\\Research file\\XJTU_PhD\\SourceCodes_Paper\\SCAforCGT\\scafor-cgt\\Lists\\Lists_1000_10_1.txt", std::ios::in);
+	ifstream getParaData("D:\\Research file\\XJTU_PhD\\SourceCodes_Paper\\Github_1.45ForCGTP\\A-1.45-Competitive-Alg-for-the-CGTP\\Lists\\Lists_1000_10_1.txt", std::ios::in);
 
 	int List;
 	for (List = 0; List < 1000; List++)
@@ -966,12 +966,12 @@ int main(int argc, char** argv)
 
 		InputName = strFileName.data();
 		char* t1 = new char[strlen(InputName) + 100];
-		strcpy(t1, "D:\\Research file\\XJTU_PhD\\SourceCodes_Paper\\SCAforCGT\\scafor-cgt\\Instances_New\\1000-10-1000\\");
+		strcpy(t1, "D:\\Research file\\XJTU_PhD\\SourceCodes_Paper\\Github_1.45ForCGTP\\A-1.45-Competitive-Alg-for-the-CGTP\\Instances_New\\1000-10-1000\\");
 		strcat(t1, InputName);
 		InputName = t1;
 		OutputName = strFileName.data();
 		char* t2 = new char[strlen(OutputName) + 100];
-		strcpy(t2, "D:\\Research file\\XJTU_PhD\\SourceCodes_Paper\\SCAforCGT\\scafor-cgt\\Results_New\\1000-10-1000\\");
+		strcpy(t2, "D:\\Research file\\XJTU_PhD\\SourceCodes_Paper\\Github_1.45ForCGTP\\A-1.45-Competitive-Alg-for-the-CGTP\\Results_New\\1000-10-1000\\");
 		strcat(t2, OutputName);
 		OutputName = t2;
 
