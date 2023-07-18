@@ -965,12 +965,12 @@ int main(int argc, char** argv)
 		getParaData >> strFileName;
 
 		InputName = strFileName.data();
-		char* t1 = new char[strlen(InputName) + 100];
+		char* t1 = new char[strlen(InputName) + 200];
 		strcpy(t1, "D:\\Research file\\XJTU_PhD\\SourceCodes_Paper\\Github_1.45ForCGTP\\A-1.45-Competitive-Alg-for-the-CGTP\\Instances_New\\1000-10-1000\\");
 		strcat(t1, InputName);
 		InputName = t1;
 		OutputName = strFileName.data();
-		char* t2 = new char[strlen(OutputName) + 100];
+		char* t2 = new char[strlen(OutputName) + 200];
 		strcpy(t2, "D:\\Research file\\XJTU_PhD\\SourceCodes_Paper\\Github_1.45ForCGTP\\A-1.45-Competitive-Alg-for-the-CGTP\\Results_New\\1000-10-1000\\");
 		strcat(t2, OutputName);
 		OutputName = t2;
