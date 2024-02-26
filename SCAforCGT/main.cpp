@@ -686,7 +686,6 @@ void Algorithm_Du(const char* InputName, const char* OutputName, double& MDu)
 
 	//k > 40, k = ceil(0.4 * (1/sigma)), 0 < sigma <= 0.01
 	int K = 10;
-
 	if (N >= 3)
 	{
 		Big_3(N, p, index, K);
@@ -716,7 +715,6 @@ void Algorithm_ST(const char* InputName, const char* OutputName, double& MST)
 
 	//k > 40, k = ceil(0.4 * (1/sigma)), 0 < sigma <= 0.01
 	int K = 41;
-
 	if (N >= 4)
 	{
 		Big_4(N, p, index, K);
@@ -775,7 +773,7 @@ void Algorithm_Zstar(const char* InputName, const char* OutputName, double& MZst
 
 
 /*-----------------------------------*/
-/*******(1.45-competitive Alg)********/
+/*******(1.431-competitive Alg)*******/
 /*-----------------------------------*/
 void Algorithm_Zc(const char* InputName, const char* OutputName, double& MZc)
 {
@@ -824,7 +822,6 @@ void Algorithm_Zc(const char* InputName, const char* OutputName, double& MZc)
 		for (int i = 0; i < A1; i++) { pCopy[i] = 2; }
 		memcpy(pCopy, p1, sizeof(int) * A1);
 		/************************************************************************/
-
 
 		if (alpha_1 == 0)
 		{
@@ -952,7 +949,7 @@ int main(int argc, char** argv)
 	MyClass my;
 	const char* InputName, * OutputName;
 	string strFileName;
-	ifstream getParaData("D:\\Research file\\XJTU_PhD\\SourceCodes_Paper\\Github_1.45ForCGTP\\A-1.45-Competitive-Alg-for-the-CGTP\\Lists\\Lists_1000_10_1.txt", std::ios::in);
+	ifstream getParaData("Lists\\Lists_1000_10_1.txt", std::ios::in);
 
 	int List;
 	for (List = 0; List < 1000; List++)
@@ -966,12 +963,12 @@ int main(int argc, char** argv)
 
 		InputName = strFileName.data();
 		char* t1 = new char[strlen(InputName) + 200];
-		strcpy(t1, "D:\\Research file\\XJTU_PhD\\SourceCodes_Paper\\Github_1.45ForCGTP\\A-1.45-Competitive-Alg-for-the-CGTP\\Instances_New\\1000-10-1000\\");
+		strcpy(t1, ".\\Instances_New\\1000-10-1000\\");
 		strcat(t1, InputName);
 		InputName = t1;
 		OutputName = strFileName.data();
 		char* t2 = new char[strlen(OutputName) + 200];
-		strcpy(t2, "D:\\Research file\\XJTU_PhD\\SourceCodes_Paper\\Github_1.45ForCGTP\\A-1.45-Competitive-Alg-for-the-CGTP\\Results_New\\1000-10-1000\\");
+		strcpy(t2, ".\\Results_New\\1000-10-1000\\");
 		strcat(t2, OutputName);
 		OutputName = t2;
 
