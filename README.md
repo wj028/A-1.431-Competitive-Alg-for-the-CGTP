@@ -1,2 +1,2 @@
-# A-1.45-Competitive-Alg-for-the-CGTP
-A 1.45-Competitive Algorithm for Combinatorial Group Testing
+# A-1.431-Competitive-Alg-for-the-CGTP
+A 1.431-Competitive Algorithm for Combinatorial Group Testing
